@@ -4,5 +4,10 @@
 *.Rproj.user
 
 ## R
+*.R
 *.Rproj
 *.Rhistory
+
+## Excel
+*.xls
+*.xlsx

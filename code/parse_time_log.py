@@ -10,10 +10,10 @@ DESCRIPTION
 '''
 
 ## take input from standard input
-today_csv = sys.argv[1] ## ex: 
+week = sys.argv[1] ## ex: 
 
 ## load dataset(s)
-df_today = pd.read_csv(('daily-time-logs/' + today_csv), sep = ',')
+df_today = pd.read_csv(('time_logs/' + week + '.csv'), sep = ',')
 
 ## process data
 
@@ -32,15 +32,15 @@ mat_today = df_today.groupby(['date', 'Text'])['hours_elapsed'].sum().unstack().
 
 ## plot data
 # pal = sns.color_palette("Set2", as_cmap = False)
-pal = sns.color_palette("icefire", mat_today.shape[1])
+pal = sns.color_palette("pastel", mat_today.shape[1])
 
 mat_today.plot(kind = 'bar', stacked = True, color = pal)
 # mat_today.plot(kind = 'bar', stacked = True)
 plt.legend(loc = 'best', bbox_to_anchor = (1.0, 1.00))
-plt.title('Hours spent on different topics')
+plt.title('Hours spent on different projects')
 plt.ylabel('hours spent')
 plt.xticks(rotation = 45, ha = 'center')
 plt.tight_layout()
 
 ## output data to excel or plotting software
-plt.savefig('plots/foo.png')
+plt.savefig('plots/' + week + '.png')

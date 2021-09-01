@@ -11,3 +11,7 @@ Optional software:
 
 * Horo Timer -- Mac only (https://apps.apple.com/us/app/horo-timer-for-menu-bar/id1437226581?mt=12)
 * conda (miniconda3)
+
+## Quick Start
+
+
