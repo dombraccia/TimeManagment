@@ -11,13 +11,15 @@ cd TimeManagement
 conda activate managment
 
 # 3. Run parse_time_log.py on sample data
-python code/parse_time_log.py time_logs/2023-0411-0412.csv
+python code/parse_time_log.py plots/2021_0913-0920.png 
 
-## returns: plot saved to: plots/2023-0411-0412.png
+## returns: plot saved to: plots/2021_0913-0920.png
 
 # 4. Check output plot
-open plots/2023-0411-0412.png
+open plots/2021_0913-0920.png
 ```
+
+![2021_0913-0920 plot](https://github.com/dombraccia/TimeManagment/blob/main/plots/2021_0913-0920.png)
 
 ## Description
 
