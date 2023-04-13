@@ -14,4 +14,11 @@ Optional software:
 
 ## Quick Start
 
-
+```
+git clone https://github.com/dombraccia/TimeManagment
+cd TimeManagement
+conda activate managment
+python code/parse_time_log.py time_logs/2023-0411-0412.csv
+## plot saved to: plots/2023-0411-0412.png
+open plots/2023-0411-0412.png 
+``` 
